@@ -1,7 +1,5 @@
 [
   { "id": 1, "text": "What is the capital of Australia?", "answer": "Canberra" },
   { "id": 2, "text": "What is the capital of Indonesia?", "answer": "Jakarta" },
-  { "id": 3, "text": "What is your wedding anniversary date?", "answer": "Feb 7 2015" },
-  { "id": 4, "text": "What is Katja's birthday?", "answer": "Sept 9 1992" },
   { "id": 5, "text": "What is the capital of Tonga?", "answer": "Nuku'alofa" }
 ]
