@@ -1,4 +1,3 @@
-
 import readline from 'readline'
 
 import { loadQuestions } from './fs/loadQuestions'
@@ -11,7 +10,8 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-const NUMBER_OF_QUESTIONS = Number(process.env.NUMBER_OF_QUESTIONS) || 2
+const TQUIZ_NUMBER_OF_QUESTIONS = Number(process.env.NUMBER_OF_QUESTIONS) || 2
+const TQUIZ_QUESTIONS_PATH = process.env.TQUIZ_QUESTIONS_PATH || './questions.json'
 
 const write = console.log.bind(this)
 const lowerCaseEquals = (a: string, b: string) => a.toLowerCase() === b.toLowerCase()
@@ -49,7 +49,7 @@ function ask(questions: Array<Question>, answerRequired: number) : void {
 
 
 function run(): void {
-  const questions = loadQuestions('./questions.json')
+  const questions = loadQuestions(TQUIZ_QUESTIONS_PATH)
 
   if (questions.length === 0) {
     write('You have no questions, please add some to your questions file')
@@ -57,7 +57,7 @@ function run(): void {
   }
 
   write('Running quiz:\n')
-  ask(questions, NUMBER_OF_QUESTIONS);
+  ask(questions, TQUIZ_NUMBER_OF_QUESTIONS);
 }
 
 run()

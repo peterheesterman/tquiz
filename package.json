@@ -8,6 +8,9 @@
     "start": "tsc && node dist/index.js",
     "build": "tsc"
   },
+  "bin": {
+    "tquiz": "./bin/tquiz"
+  },
   "author": "Peter Heesterman <heesterman.peter@gmail.com>",
   "license": "MIT",
   "devDependencies": {
