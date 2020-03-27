@@ -35,4 +35,8 @@ export TQUIZ_NUMBER_OF_QUESTIONS='3'
 tquiz
 ```
 
-
+## TODO:
+ - [ ] make the questions pop out more by adding color
+ - [ ] Add exclusions so that if you get a certain question you can't get it again
+ - [ ] Add stats to the questions about how many times it has been asked
+   - [ ] Use this to ask the questions that are under represented with more frequency
