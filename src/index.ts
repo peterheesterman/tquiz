@@ -10,7 +10,7 @@ const rl = readline.createInterface({
   output: process.stdout
 })
 
-const TQUIZ_NUMBER_OF_QUESTIONS = Number(process.env.NUMBER_OF_QUESTIONS) || 2
+const TQUIZ_NUMBER_OF_QUESTIONS = Number(process.env.TQUIZ_NUMBER_OF_QUESTIONS) || 2
 const TQUIZ_QUESTIONS_PATH = process.env.TQUIZ_QUESTIONS_PATH || './questions.json'
 
 const write = console.log.bind(this)
